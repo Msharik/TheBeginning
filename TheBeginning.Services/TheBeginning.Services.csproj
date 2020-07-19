@@ -12,6 +12,8 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -44,14 +47,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TheBeginning.Database\TheBeginning.Database.csproj">
-      <Project>{6bfc36fa-4359-4e0b-8022-b3330620e8ce}</Project>
-      <Name>TheBeginning.Database</Name>
+    <ProjectReference Include="..\TheBeginning.DB\TheBeginning.DB.csproj">
+      <Project>{f6186f67-21e0-4a11-83bc-eff5b6f6c17d}</Project>
+      <Name>TheBeginning.DB</Name>
     </ProjectReference>
     <ProjectReference Include="..\TheBeginning.Entities\TheBeginning.Entities.csproj">
       <Project>{7e70176e-b649-44c2-b3ae-f6f91e1a2605}</Project>
       <Name>TheBeginning.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
