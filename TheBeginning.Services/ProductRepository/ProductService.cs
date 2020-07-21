@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,7 +30,7 @@ namespace TheBeginning.Services.ProductRepository
 
         public List<ProductEntity> GetList()
         {
-            return _context.Products.ToList();
+            return _context.Products.Include(Im=>Im.ImageEntity).Include(CI=>CI.CategoryEntity).ToList();
         }
 
         public int Update(int Id, ProductEntity model)

@@ -15,5 +15,6 @@ namespace TheBeginning.DB
 
         }
         public DbSet<ProductEntity> Products { get; set; }
+        public DbSet<ImageEntity>  Images { get; set; }
     }
 }

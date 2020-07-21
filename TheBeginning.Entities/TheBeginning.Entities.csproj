@@ -45,6 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity\BaseEntity.cs" />
+    <Compile Include="Entity\CategoryEntity.cs" />
+    <Compile Include="Entity\ImageEntity.cs" />
     <Compile Include="Entity\ProductEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

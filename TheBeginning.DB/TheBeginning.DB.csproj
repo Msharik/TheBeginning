@@ -55,6 +55,18 @@
     <Compile Include="Migrations\202007191841290_InitialMigration.designer.cs">
       <DependentUpon>202007191841290_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007211935131_AddedImageEntity.cs" />
+    <Compile Include="Migrations\202007211935131_AddedImageEntity.designer.cs">
+      <DependentUpon>202007211935131_AddedImageEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007211939428_AddedImageEntity1.cs" />
+    <Compile Include="Migrations\202007211939428_AddedImageEntity1.designer.cs">
+      <DependentUpon>202007211939428_AddedImageEntity1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202007212002484_AddedCategoryEntity.cs" />
+    <Compile Include="Migrations\202007212002484_AddedCategoryEntity.designer.cs">
+      <DependentUpon>202007212002484_AddedCategoryEntity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WatchContext.cs" />
@@ -72,6 +84,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202007191841290_InitialMigration.resx">
       <DependentUpon>202007191841290_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007211935131_AddedImageEntity.resx">
+      <DependentUpon>202007211935131_AddedImageEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007211939428_AddedImageEntity1.resx">
+      <DependentUpon>202007211939428_AddedImageEntity1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007212002484_AddedCategoryEntity.resx">
+      <DependentUpon>202007212002484_AddedCategoryEntity.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
